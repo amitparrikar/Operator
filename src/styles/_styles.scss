@@ -18,12 +18,35 @@
   }
 }
 
-.page-content-card {
-  width: 100%;
-  min-height: 25rem;
+.make-row {
+  &:before {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    content: ' ';
+    display: table;
+  }
+}
+
+.card-item {
   background-color: $page-content-background-color;
   box-shadow: $default-box-shadow;
-  border-radius: 0.2rem;
+}
+
+.page-content-card {
+  @extend .card-item;
+  width: 100%;
+  min-height: 10rem;
+}
+
+.flex-container {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .m-b-10 {

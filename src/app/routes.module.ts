@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
 import { ExaminationComponent } from './examination/examination.component';
+import { AvatarComponent } from './common/avatar/avatar.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -16,7 +17,8 @@ const appRoutes: Routes = [
   declarations: [
     HomeComponent,
     SettingComponent,
-    ExaminationComponent
+    ExaminationComponent,
+    AvatarComponent
   ],
   imports: [RouterModule.forRoot(appRoutes, {})],
   exports: [RouterModule]

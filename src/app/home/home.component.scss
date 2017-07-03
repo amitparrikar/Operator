@@ -1,0 +1,23 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/mixins.scss";
+
+.page-content-card {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mdl-card {
+  width: 16rem;
+
+  .mdl-card__title {
+    h4 {
+      color: $card-title-count-color;
+      font-size: 4.5rem;
+    }
+
+  }
+  .mdl-card__actions {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
