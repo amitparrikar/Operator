@@ -9,7 +9,9 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "assets/images/new_year_background.png"
+
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -19,7 +21,10 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "op",
       "styles": [
-        "styles/_styles.scss"
+        "styles/_styles.scss",
+        "styles/material.light_green-orange.min.css",
+        "styles/icon.css",
+        "styles/material-icon.woff2"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
