@@ -4,6 +4,28 @@
 
 // DECLARE GLOBAL STYLES HERE
 
-h5 {
-  color: $primary-color;
+.mdl-layout__content {
+  background-image: url($layout-background-color);
+
+  .mdl-layout__tab-panel {
+    .page-content {
+      max-width: $page-content-max-width;
+      margin: 0 auto;
+      //min-height: $page-content-min-height;
+      //background-color: $page-content-background-color;
+      //box-shadow: $default-box-shadow;
+    }
+  }
+}
+
+.page-content-card {
+  width: 100%;
+  min-height: 25rem;
+  background-color: $page-content-background-color;
+  box-shadow: $default-box-shadow;
+  border-radius: 0.2rem;
+}
+
+.m-b-10 {
+  margin-bottom: 1rem;
 }
