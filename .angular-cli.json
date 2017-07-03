@@ -9,8 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico",
-        "assets/images/new_year_background.png"
+        "favicon.ico"
 
       ],
       "index": "index.html",

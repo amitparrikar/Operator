@@ -1,0 +1,41 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/mixins.scss";
+
+
+
+.make-row {
+  &:before {
+    content: ' ';
+    display: table;
+  }
+  &:after {
+    content: ' ';
+    display: table;
+  }
+}
+
+
+.mdl-textfield {
+  width: 30rem;
+  margin-top: 1rem;
+}
+
+.avatar-section {
+
+}
+
+.form-group {
+  .form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 300;
+    color: $form-label-color;
+  }
+  .form-label-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 3rem;
+    padding-left: 1rem;
+  }
+}
