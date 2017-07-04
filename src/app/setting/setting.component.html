@@ -32,26 +32,45 @@
     <op-avatar [avatarImage]="''"></op-avatar>
   </div>
 
-  <div class="mdl-cell mdl-cell--12-col">
 
+  <div class="mdl-cell mdl-cell--12-col">
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" id="secondaryEmail" name="secondaryEmail">
         <label class="mdl-textfield__label" for="secondaryEmail">Secondary Email</label>
       </div>
       <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="secondaryEmail" name="secondaryEmail">
-        <label class="mdl-textfield__label" for="secondaryEmail">Secondary Email</label>
+        <input class="mdl-textfield__input" type="text" id="secondaryContactNum" name="secondaryContactNum">
+        <label class="mdl-textfield__label" for="secondaryContactNum">Secondary Contact Number</label>
+      </div>
+
+      <div class="mdl-cell mdl-cell--12-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <textarea class="mdl-textfield__input" type="text" rows= "4" id="reminderSmsText" maxlength="100"></textarea>
+        <label class="mdl-textfield__label" for="reminderSmsText">Compose SMS</label>
+        <div class="mdl-tooltip" for="reminderSmsText">
+          <strong>Compose SMS</strong><br>
+          This text will be sent to your customer to notify.<br>
+          Max 100 characters.
+        </div>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <textarea class="mdl-textfield__input" type="text" rows= "4" id="address"></textarea>
+        <label class="mdl-textfield__label" for="address">PUC Center Address</label>
       </div>
 
       <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="secondaryEmail" name="secondaryEmail">
-        <label class="mdl-textfield__label" for="secondaryEmail">Secondary Email</label>
+        <input class="mdl-textfield__input" type="password" id="newPassword" name="newPassword">
+        <label class="mdl-textfield__label" for="newPassword">Choose New Password</label>
       </div>
       <div class="mdl-cell mdl-cell--6-col mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" id="secondaryEmail" name="secondaryEmail">
-        <label class="mdl-textfield__label" for="secondaryEmail">Secondary Email</label>
+        <input class="mdl-textfield__input" type="password" id="newPasswordConfirm" name="newPasswordConfirm">
+        <label class="mdl-textfield__label" for="newPasswordConfirm">Confirm New Password</label>
       </div>
     </div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--10-col align-right">
+    <button class="mdl-button mdl-js-button mdl-button--raised" type="button">Cancel</button>
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Update Details</button>
   </div>
 </form>
