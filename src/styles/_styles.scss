@@ -3,7 +3,6 @@
 @import "./variables.scss";
 
 // DECLARE GLOBAL STYLES HERE
-
 .mdl-layout__content {
   background-image: url($layout-background-color);
 
@@ -40,6 +39,7 @@
   min-height: 10rem;
 }
 
+
 .flex-container {
   list-style: none;
   display: flex;
@@ -49,9 +49,15 @@
   justify-content: space-around;
 }
 
+.no-margin{
+  margin: 0!important;
+}
 .m-b-10 {
   margin-bottom: 1rem;
 }
+
+
+
 .m-l-10 {
   margin-left: 1rem;
 }

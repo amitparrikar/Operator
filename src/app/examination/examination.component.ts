@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from './../services/common.service';
 
 @Component({
   selector: 'op-examination',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExaminationComponent implements OnInit {
 
-  constructor() { }
+  //selectedVehicleType:number = 1;
+  vehicleType:Array<any> = [];
+  vehicleCategory:Array<any> = [];
+  vehicleWheelNumber:Array<any> = [];
+  vehicleMakers:Array<any> = [];
+  pollutionComponents:Array<any> = [];
+
+  constructor(private commonService: CommonService) { }
 
   ngOnInit() {
+    this.vehicleType = this.commonService.getVehicleTypes();
+    this.vehicleCategory = this.commonService.getVehicleCategory();
+    this.vehicleWheelNumber = this.commonService.getVehicleNumberOfWheels();
+    this.vehicleMakers = this.commonService.getVehicleMakers();
+    this.pollutionComponents = this.commonService.getPollutionComponents();
+
   }
 
 }

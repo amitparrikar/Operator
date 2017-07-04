@@ -21,7 +21,7 @@
       "prefix": "op",
       "styles": [
         "styles/_styles.scss",
-        "styles/material.light_green-orange.min.css",
+        "styles/material.purple-light_green.min.css",
         "styles/icon.css",
         "styles/material-icon.woff2"
       ],
