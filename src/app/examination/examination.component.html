@@ -1,3 +1,104 @@
-<p>
-  examination works!
-</p>
+<form class="mdl-grid card-item">
+  <div class="mdl-cell mdl-cell--9-col">
+    <div class="mdl-grid">
+
+      <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+          <input class="mdl-textfield__input" type="text" id="regNumber" name="regNumber">
+          <label class="mdl-textfield__label" for="regNumber">Vehicle Registration Number</label>
+        </div>
+      </div>
+      <!-- TYPE-CATEGORY-WHEELS SECTION -->
+      <div class="mdl-cell mdl-cell--4-col m-b-25">
+        <md-select placeholder="Vehicle Type" [(ngModel)]="selectedVehicleType" name="vehicleType">
+           <md-option *ngFor="let type of vehicleType" [value]="type.id">{{ type.name }}</md-option>
+        </md-select>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col m-b-25">
+        <md-select placeholder="Vehicle Category" [(ngModel)]="selectedVehicleCategory" name="vehicleCategory">
+           <md-option *ngFor="let category of vehicleCategory" [value]="category.id">{{ category.name }}</md-option>
+        </md-select>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col m-b-25">
+        <md-select placeholder="Number of Wheels" [(ngModel)]="selectedNumberOfWheels" name="numberOfWheels">
+           <md-option *ngFor="let wheel of vehicleWheelNumber" [value]="wheel.id">{{ wheel.name }}</md-option>
+        </md-select>
+      </div>
+      <!-- TYPE-CATEGORY-WHEELS SECTION -->
+      <!-- MAKE-MODEL-ODOMETER SECTION -->
+      <div class="mdl-cell mdl-cell--4-col">
+        <md-select placeholder="Vehicle Make" [(ngModel)]="selectedVehicleMake" name="vehicleMake">
+           <md-option *ngFor="let make of vehicleMakers" [value]="make.id">{{ make.name }}</md-option>
+        </md-select>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col">
+        <md-input-container>
+          <input mdInput maxlength="4" placeholder="Vehicle Model">
+        </md-input-container>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col">
+        <md-input-container>
+          <input mdInput placeholder="Odometer Reading">
+        </md-input-container>
+      </div>
+      <!-- MAKE-MODEL-ODOMETER SECTION -->
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--3-col">
+    photo goes here
+  </div>
+
+
+  <!-- VEHICLE OWNER DETAILS -->
+  <div class="mdl-cell mdl-cell--12-col">
+    <fieldset>
+      <legend>Owner Details:</legend>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col">
+          <md-input-container>
+            <input mdInput placeholder="Vehicle Owner Name">
+          </md-input-container>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+          <md-input-container>
+            <input mdInput placeholder="Contact Number">
+          </md-input-container>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col">
+          <md-input-container>
+            <input mdInput type="email" placeholder="Contact Email" name="email">
+          </md-input-container>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!-- VEHICLE OWNER DETAILS -->
+
+  <!-- SMOKE COMPNENT DETAILS -->
+  <div class="mdl-cell mdl-cell--12-col">
+    <fieldset>
+      <legend>Pollution Details:</legend>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--4-col mb-10" *ngFor="let component of pollutionComponents; let i=index;">
+          <md-input-container>
+            <input mdInput [placeholder]="component.name">
+          </md-input-container>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <!-- SMOKE COMPNENT DETAILS -->
+
+  <!-- CAPTCH SECTION -->
+  <div class="mdl-cell mdl-cell--12-col">
+    TODO: Captcha to be implemeted
+  </div>
+  <!-- CAPTCH SECTION -->
+
+  <div class="mdl-cell mdl-cell--12-col align-right">
+    <button md-raised-button>Reset</button>
+    <button type="submit" class="mdl-color--accent" md-raised-button>Perform Test</button>
+  </div>
+
+</form>
