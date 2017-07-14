@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SettingComponent } from './setting/setting.component';
 import { ExaminationComponent } from './examination/examination.component';
 import { AvatarComponent } from './common/avatar/avatar.component';
-// import { SelectBoxComponent } from './common/select-box/select-box.component';
+import { WebcamBoxComponent } from './common/webcam-box/webcam-box.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -23,7 +23,8 @@ const appRoutes: Routes = [
     HomeComponent,
     SettingComponent,
     ExaminationComponent,
-    AvatarComponent
+    AvatarComponent,
+    WebcamBoxComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes, {}),
