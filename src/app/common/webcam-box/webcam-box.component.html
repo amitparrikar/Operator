@@ -1,0 +1,6 @@
+<div id="webcam-box">
+  <video #videoElem autoplay [width]="elemWidth" [height]="elemHeight"></video>
+  <canvas #canvasElem [width]="elemWidth" [height]="elemHeight"></canvas>
+  <button type="button" class="mdl-button mdl-button--raised" (click)="onVideoStart()">{{buttonText}}</button>
+
+</div>
